@@ -1,0 +1,2 @@
+This is where I will be practicing and learned about CSS as a standalone language, rather than accompaning html.
+This may be silly as they interact frequently in web apps so look to see if it is worth your time to really dive into the language.
