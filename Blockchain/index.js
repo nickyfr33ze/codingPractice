@@ -1,5 +1,5 @@
 // URL walkthrough: https://medium.com/geekculture/blockchain-explained-in-50-lines-of-code-1dbf4eda0201
-const hash = require("crypto-js/sha256");   //sets the encryption algorithm for this blockchain
+const hash = require("crypto-js/sha256");   //sets the encryption algorithm for this blockchain & and sets the constant of hash to the type of encryption
 class Block {
     constructor(previousHash, data){
         this.data = data;
@@ -26,7 +26,7 @@ class Block {
 }
 class Blockchain {  //This is a new class or object called "Blockchain"
     constructor(){  //this object take a constructor parameter
-        let genesisBlock = new Block("0", { isGenesis: true});  //this is the data that will be passwed to the constructor
+        let genesisBlock = new Block("0", { isGenesis: true});  //this is the data that will be passed to the constructor, genesisBlock is the first block in the chain which is why you can see 0 passed in this
         this.chain = [genesisBlock];
     }
     addBlock(data){     //addBlock is a function that adds a new block to the blockchain
@@ -49,12 +49,12 @@ class Blockchain {  //This is a new class or object called "Blockchain"
 //now going to add 2 new blocks to the chain that contain transisitons information to our blockchain
 let blockchain = new Blockchain();
 blockchain.addBlock({   //calls back to the addBlock function on line 35 and takes the data passed in this function
-    from: 'Viet',
-    to: 'Nick',
-    amount: 69420,
+    from: 'Viet',   //sender
+    to: 'Nick',     //recipient
+    amount: 69420,  //amount to be transferred 
 });
-blockchain.addBlock({
-    from: 'Kenny',
-    to: 'Elon',
-    amount: 42069,
+blockchain.addBlock({   //add another block to the chain
+    from: 'Kenny',  //sender
+    to: 'Elon',     //recipient
+    amount: 42069,  //amount to be transferred
 });
