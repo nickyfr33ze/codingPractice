@@ -28,7 +28,7 @@ class Solution:
     def getRange(self, arr, target):
         #Fill this in
 
-        #Test the program
+        #Test the program   this is all currently in the function. Does this need to be outside the function?
         arr = [1, 2, 2, 2, 2, 3, 4, 7, 8, 8]
         x = 2
         print(Solution().getRange(arr, x))
