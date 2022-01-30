@@ -26,8 +26,9 @@ print(Solution().getRange(arr, x))
 '''
 class Solution:
     def getRange(self, arr, target):
-        #Fillt his in
-        
-arr = [1, 2, 2, 2, 2, 3, 4, 7, 8, 8]
-x = 2
-print(Solution().getRange(arr, x))
+        #Fill this in
+
+        #Test the program
+        arr = [1, 2, 2, 2, 2, 3, 4, 7, 8, 8]
+        x = 2
+        print(Solution().getRange(arr, x))
