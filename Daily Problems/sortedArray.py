@@ -25,15 +25,16 @@ print(Solution().getRange(arr, x))
 # [1, 4]
 '''
 class Solution:
-    def getRange(self, arr, target):
-        arr = [1, 2, 2, 2, 2, 3, 4, 7, 8, 8]    # Input
-        x = 2                                   # Target
-        #Fill this in
-        count = 0
-        while(int i = 0, i < arr.size, i++):    # iterate over the array and confirm that the pointer 'i' is less than the array size and increase it by one
-            while(int j = 0, j < arr[i], j++):  # compare 'j' to the position of 'i' in the array and increase it by 1 
-
+    arr = [1, 2, 2, 2, 2, 3, 4, 7, 8, 8]    # Input
+    temp = 0                                # Temp place holder to compare to target 'x'
+    x = 2                                   # Target
+    #Fill this in
+    count = 0
+        #def getRange(self, arr, target):
+    # We can use the indicy where the target is first found and store that, somewhere and do the same with the final indicy
+    while(count <= arr.size):   # The idea is to iterate over the array once and compare each indicy to target
+        
             
 
         #Test the program   this is all currently in the function. Does this need to be outside the function?
-        print(Solution().getRange(arr, x))
+        #print(Solution().getRange(arr, x))
